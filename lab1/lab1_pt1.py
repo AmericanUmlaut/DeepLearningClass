@@ -7,7 +7,6 @@ b = float(sys.argv[2])
 learn_rate = float(sys.argv[3])
 optimizer = sys.argv[4]
 
-# TODO: change w1, w2 into a single constant [0, 0]^T
 w = tf.get_variable(name='w', shape=[2, 1], dtype=tf.float32, initializer=tf.zeros_initializer)
 
 # f(w) = (a - w1)^2 + b(w2 - w1^2)^2
