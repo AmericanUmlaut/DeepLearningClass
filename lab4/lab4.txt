@@ -1,0 +1,28 @@
+L.1) Benjamin Stuermer, Romarie Morales, Sarah Reehl
+
+L.2) N/A
+
+L.3) 4 hours
+
+L.4) Moderately challenging
+
+L.5) We spent quite a lot of time reviewing your code for Model 1 and making sure we all understood how the code worked,
+     how each layer worked, and how the dimensions of each layer related to the previous and following layers.
+
+1)
+
+Model 1: 0.99060 0.98940 0.98580 0.98860
+Model 2: 0.98900 0.99220 0.98980 0.99033
+Model 3: 0.98660 0.98640 0.98220 0.98573
+Model 4: 0.99040 0.99040 0.99020 0.99033
+Model 5: 0.94980 0.94780 0.94460 0.94740
+
+2) Our model 5 has two layers:
+    1. A conv layer with k=28, L`=20, S=1, VALID padding and f=relu
+    2. A conv layer with k=1, L`=10, S=1, VALID padding and f=identity
+
+We experimented with quite a few architectures but we decided our goal would be to find the architecture that
+could achieve 95% accuracy for the lowest memory footprint and least training time. Our results here are a bit under 95%
+because we tested with larger epoch limits and then had bad luck with the runs we did for our official runs. Our model
+trains in a small fraction of the time required for any of the other four models and has a degree of accuracy that we
+thought would likely be sufficient for some applications.

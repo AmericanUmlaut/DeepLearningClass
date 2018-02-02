@@ -1,0 +1,77 @@
+L.1) List the lab group members who were present for all parts of this lab (including any
+follow-up after the class period).
+Sarah Reehl
+Benjamin Stuermer
+Romie Morales Rosado
+
+L.2) List any lab group members who were not present for at least some parts of this lab
+(including any follow-up after class), and please clarify the parts they missed.
+
+
+L.3) How much time, if any, did you need outside of Monday’s class time to complete this assignment. Put “no additional time” if you completed the lab within the scheduled
+class period.
+4 hours
+
+L.4) How challenging was it for your lab group to coordinate a time to meet after the assigned lab hour?
+Moderately
+
+1) If you run your code with all default arguments (using the defaults listed on the 2nd
+page of this pdf)
+1.1) What is the last epoch of training? (Should be a number between 0 and epochs.)
+Epoch 34
+1.2) What is the last dev set accuracy obtained (for the epoch in the previous bullet)?
+0.91460
+1.3) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.91620
+
+2) If you run your code with all default arguments except you set mb=512)
+2.1) What is the last epoch of training? (Should be a number between 0 and epochs.)
+Epoch 75 
+2.2) What is the last dev set accuracy obtained (for the epoch in the previous bullet)? 
+0.90420
+2.3) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.90560
+2.4) Does this take more or less wall clock time per epoch than question #1?
+less
+
+3) If you run your code with all default arguments except you set lr=0.001
+3.1) What is the last epoch of training? (Should be a number between 0 and epochs.)
+Epoch 99
+3.2) What is the last dev set accuracy obtained (for the epoch in the previous bullet)?
+0.89400
+3.3) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.89500
+
+4) If you run your code with all default arguments except you set f1 equal to relu)
+4.1) What is the last epoch of training? (Should be a number between 0 and epochs.)
+Epoch 32
+4.2) What is the last dev set accuracy obtained (for the epoch in the previous bullet)?
+0.91860
+4.3) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.92020
+
+5) If you run your code with all default arguments except you set L=200
+5.1) What is the last epoch of training? (Should be a number between 0 and epochs.)
+Epoch 34
+5.2) What is the last dev set accuracy obtained (for the epoch in the previous bullet)?
+0.91460
+5.3) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.91620
+
+6) Try tuning the various hyperparameters (e.g. mb, lr) for at least 10 runs and see what
+the best dev set performance you can get is. For your best model:
+test1: -lr 0.01 -f1 relu 0.91260
+test2: -f1 "relu" -lr 0.01 -epochs 200 -mb 256 -L 300 0.89360
+test3: -f1 relu -patience 20 0.92340
+test4: -f1 "relu" -lr 0.01 -epochs 200 -mb 256 -L 10 0.89460
+test5: -f1 sigmoid -lr 0.01 -epochs 100 -mb 256 -L 784 0.89640
+test6: -f1 sigmoid -patience 10 0.91620
+test7: -f1 relu -patience 30 0.92340
+test8: -f1 sigmoid -patience 20 0.91620
+test9: -f1 relu -patience 20 -lr 0.001 0.87840
+test10: -f1 sigmoid -lr 0.001 -patience 20 0.89500
+
+6.1) What hyperparameters got you the best performance?
+-f1 relu -patience 20 
+6.2) What is the best dev set accuracy obtained (last epoch with badcount=0)?
+0.92340
